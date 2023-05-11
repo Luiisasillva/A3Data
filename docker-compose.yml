@@ -1,0 +1,8 @@
+services:
+  webapp:
+    container_name: jupyter_pyspark
+    build: .
+    image: jupyter_pyspark
+    command: start.sh jupyter lab --LabApp.token=''
+    ports:
+      - "8888:8888"
